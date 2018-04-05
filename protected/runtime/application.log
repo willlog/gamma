@@ -1,0 +1,828 @@
+2018/01/23 17:32:54 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'sigma'@'localhost' (using password: YES) in /var/www/html/soman/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/soman/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/soman/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/soman/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/soman/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/html/soman/gamma/protected/controllers/SiteController.php(52): CModule->__get('db')
+#5 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/soman/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('')
+#10 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#11 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /var/www/html/soman/gamma/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/gamma/
+---
+2018/01/23 20:02:08 [error] [php] Invalid argument supplied for foreach() (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:81)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (81)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/01/23 20:02:27 [error] [php] Invalid argument supplied for foreach() (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:81)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (81)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/01/23 20:03:46 [error] [php] Invalid argument supplied for foreach() (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:81)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (81)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/01/23 20:04:51 [error] [php] Invalid argument supplied for foreach() (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:81)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (81)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/01/23 20:10:04 [error] [php] Invalid argument supplied for foreach() (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:81)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (81)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/01/23 20:14:16 [error] [exception.ParseError] ParseError: syntax error, unexpected '>', expecting end of file in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php:82
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#2 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#3 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /var/www/html/soman/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): CBaseController->endContent()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#8 /var/www/html/soman/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#9 /var/www/html/soman/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#10 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): CController->render('index', Array)
+#11 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/soman/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/soman/gamma/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/gamma/
+---
+2018/01/23 20:14:17 [error] [exception.ParseError] ParseError: syntax error, unexpected '>', expecting end of file in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php:82
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#2 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#3 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /var/www/html/soman/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): CBaseController->endContent()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#8 /var/www/html/soman/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#9 /var/www/html/soman/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#10 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): CController->render('index', Array)
+#11 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/soman/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/soman/gamma/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/gamma/
+---
+2018/01/23 20:14:19 [error] [exception.ParseError] ParseError: syntax error, unexpected '>', expecting end of file in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php:82
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#2 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#3 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /var/www/html/soman/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): CBaseController->endContent()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#8 /var/www/html/soman/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#9 /var/www/html/soman/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#10 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): CController->render('index', Array)
+#11 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/soman/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/soman/gamma/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/gamma/
+---
+2018/01/23 20:15:07 [error] [php] Undefined variable: value1 (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:91)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (91)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/01/23 20:15:09 [error] [php] Undefined variable: value1 (/var/www/html/soman/gamma/themes/classic/views/layouts/main.php:91)
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/soman/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/soman/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/soman/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/html/soman/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php(9): SiteController->endContent()
+#6 /var/www/html/soman/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/soman/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/soman/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/soman/gamma/protected/controllers/SiteController.php(161): SiteController->render()
+#10 /var/www/html/soman/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/soman/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/soman/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/soman/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/soman/gamma/index.php(13): CWebApplication->run()
+REQUEST_URI=/gamma/
+in /var/www/html/soman/gamma/themes/classic/views/layouts/main.php (91)
+in /var/www/html/soman/gamma/themes/classic/views/layouts/column1.php (9)
+in /var/www/html/soman/gamma/protected/controllers/SiteController.php (161)
+2018/04/05 19:38:54 [error] [exception.CException] CException: Property "CUrlManager.enablePrettyUrl" is not defined. in /var/www/html/soman/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/soman/yii/framework/YiiBase.php(220): CComponent->__set('enablePrettyUrl', true)
+#1 /var/www/html/soman/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /var/www/html/soman/yii/framework/base/CApplication.php(531): CModule->getComponent('urlManager')
+#3 /var/www/html/soman/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#6 {main}
+REQUEST_URI=/gamma/
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/
+---
+2018/04/05 20:53:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/pdf.ico". in /var/www/html/soman/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf.ico')
+#1 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/gamma/images/pdf.ico
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/mihistorial.html
+---
+2018/04/05 20:53:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/pdf.ico". in /var/www/html/soman/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf.ico')
+#1 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/gamma/images/pdf.ico
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/compartidosautor/6.html
+---
+2018/04/05 20:53:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/pdf.ico". in /var/www/html/soman/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf.ico')
+#1 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/gamma/images/pdf.ico
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/visitadosautor/6.html
+---
+2018/04/05 20:53:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/pdf.ico". in /var/www/html/soman/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf.ico')
+#1 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/gamma/images/pdf.ico
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/visit/index.html
+---
+2018/04/05 20:54:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/jqueryKnob/jquery.knob.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/iCheck/icheck.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/iCheck/icheck.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/jqueryKnob/jquery.knob.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/pdf.ico". in /var/www/html/soman/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf.ico')
+#1 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/gamma/images/pdf.ico
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/mihistorial.html
+---
+2018/04/05 20:54:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/jqueryKnob/jquery.knob.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/iCheck/icheck.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/iCheck/icheck.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/jqueryKnob/jquery.knob.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:40 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:40 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:41 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@y
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:41 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ym
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:41 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@yma
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:42 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymao
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:42 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@yma
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:43 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymai
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:43 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:44 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:44 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.cio
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:44 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.cio
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:44 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.cio
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:45 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.ci
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:45 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.c
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.co
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 20:54:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /var/www/html/soman/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/soman/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/soman/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/soman/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/soman/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/soman/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/soman/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('indexbuscarusua...')
+#9 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/indexbusca...')
+#10 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/gamma/user/indexbuscarusuarios/german20@ymail.com
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 21:04:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/jqueryKnob/jquery.knob.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 21:04:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/iCheck/icheck.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 21:04:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 21:04:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/iCheck/icheck.min.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 21:04:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/js/plugins...')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/js/plugins/jqueryKnob/jquery.knob.js
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/nuevomensaje.html
+---
+2018/04/05 21:07:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "Pasarid". in /var/www/html/soman/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CController.php(270): CController->missingAction('Pasarid')
+#1 /var/www/html/soman/yii/framework/web/CWebApplication.php(282): CController->run('Pasarid')
+#2 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Pasarid')
+#3 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/gamma/user/Pasarid/undefined
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/confignotificaciones.html
+---
+2018/04/05 21:12:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/pdf.ico". in /var/www/html/soman/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/soman/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf.ico')
+#1 /var/www/html/soman/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/soman/gamma/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/gamma/images/pdf.ico
+HTTP_REFERER=https://soman.uta.edu.ec/gamma/user/mihistorial.html
+---

@@ -1,0 +1,1 @@
+<?php $this->renderPartial('_formsolicitud', array('model'=>$model)); ?>
